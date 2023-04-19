@@ -1,4 +1,5 @@
 import firebase from "firebase/app";
+import "firebase/auth";
 
 // Your web app's Firebase configuration
 // Firebse V8.8.0 버전
@@ -23,4 +24,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 
-export default firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+
+export const authService = firebase.auth();
