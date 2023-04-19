@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
 
 // Your web app's Firebase configuration
-
+// Firebse V8.8.0 버전
 const firebaseConfig = {
 
     apiKey: process.env.REACT_APP_API_KEY,
