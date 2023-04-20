@@ -16,9 +16,9 @@ function App() {
                 updateProfile: (args) => user.updateProfile(args),
             });
         }
-        // else {
-        //     setIsLoggedIn(false);
-        // }
+        else {
+            setUserObject(null);
+        }
         setInit(true);
     });
   }, [])
@@ -33,7 +33,7 @@ function App() {
   return (
     <>
         {init ? <AppRouter refreshUser={refreshUser} isLoggedIn = {Boolean(userObject)} userObject={userObject} /> : "Initializing..."}
-        <footer>&copy; {new Date().getFullYear()} Nwitter </footer>
+        <footer style={{textAlign: "center"}}>&copy; {new Date().getFullYear()} Nwitter </footer>
     </>
   );
 }
